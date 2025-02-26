@@ -14,7 +14,7 @@ import BondDuration_File
 def test_getBondDuration():
     assert round(BondDuration_File.getBondDuration(.03, 2000000, .04, 10, 1), 2) == 8.51    
     assert round(BondDuration_File.getBondDuration(.03, 2000000, .04, 10, 2), 2) == 8.42
-    assert 'for' not in inspect.getsource(BondPrice_File.getBondPrice)
+    assert 'for' not in inspect.getsource(BondDuration_File.getBondDuration)
 
 import FizzBuzz_File
 def test_FizzBuzz():
@@ -22,4 +22,4 @@ def test_FizzBuzz():
     assert x[0] == "buzz"
     assert (x[1]) == 41
     assert x[5] == "fizzbuzz"
-    assert 'for' not in inspect.getsource(BondPrice_File.getBondPrice)
+    assert 'for' not in inspect.getsource(FizzBuzz_File.FizzBuzz)
